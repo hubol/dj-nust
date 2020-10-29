@@ -5,11 +5,28 @@
     <title>DJ Nust</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
         <h1>DJ Nust</h1>
         <h2>Official website</h2>
     </header>
+    <main>
+        <section id="booking">
+            <h3>Book me for your next show</h3>
+            <form onsubmit="return handleSubmit(event)">
+                <label for="name">Name</label>
+                <input id="name" type="text">
+                <label for="phone">Phone number</label>
+                <input id="phone" type="text">
+                <input type="submit">
+            </form>
+        </section>
+        <section id="success" class="invisible">
+            <h3>Awesome, we'll be in touch.</h3>
+        </section>
+    </main>
 </body>
 </html>

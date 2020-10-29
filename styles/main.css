@@ -1,0 +1,95 @@
+html {
+    background-image: linear-gradient(#A38FE0, #54CE8F);
+    background-attachment: fixed;
+    font-size: 200%;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: .2em .4em;
+    margin: 1em 0 0;
+    user-select: none;
+}
+
+h2 {
+    margin: .3em 0;
+}
+
+label, input {
+    display: block;
+}
+
+h3 {
+    margin: 1em 0 .5em;
+    font-size: 115%;
+}
+
+input {
+    font-size: 110%;
+    border-radius: 0;
+}
+
+input[type="text"] {
+    border-style: solid;
+    border-width: .15em;
+    margin-bottom: .3em;
+    width: 100%;
+}
+
+input[type="submit"] {
+    margin-top: .6em;
+    padding: .1em .3em;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-bottom: 1em;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+    font-style: italic;
+}
+
+input[type="submit"]:active {
+    transform: translate(.1em, .1em);
+}
+
+input {
+    outline: none;
+}
+
+.invisible {
+    display: none;
+}
+
+#success h3 {
+    transform-origin: left;
+    animation-name: enlargeAnimation;
+    animation-duration: 1s;
+}
+
+@keyframes enlargeAnimation {
+    from {
+        transform: translate(-20em, 40em) scale(0) rotate(720deg);
+    }
+    to {
+        transform: translate(0) scale(1) rotate(0);
+    }
+}
